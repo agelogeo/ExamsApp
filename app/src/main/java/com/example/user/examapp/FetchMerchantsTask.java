@@ -58,7 +58,7 @@ public class FetchMerchantsTask extends AsyncTask<String,Void,ArrayList<Merchant
 
         try {
             final String YUMMY_MERCHANTS_URL =
-                    "/Merchant/index.json?$orderby=dateCreated%20desc";
+                    "/Merchant/index.json?$orderby=id%20desc";
 
             Uri builtUri = Uri.parse(YUMMY_BASE_DOMAIN+YUMMY_MERCHANTS_URL);
 

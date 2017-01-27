@@ -10,8 +10,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.user.examapp.MainActivity">
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/main_listview" />
 </FrameLayout>
