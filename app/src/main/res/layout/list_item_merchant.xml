@@ -9,60 +9,64 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/yummy_logo"
         android:id="@+id/list_item_merchant_image"
-        android:layout_weight="1"
-        android:paddingTop="@dimen/activity_horizontal_margin"
-        android:paddingLeft="@dimen/activity_vertical_margin"
-        android:paddingRight="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_horizontal_margin"
-        android:layout_width="10dp" />
+        android:layout_weight="0.16"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="188dp"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/listPreferredItemHeightLarge"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
             android:id="@+id/list_item_merchant_legal_name"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:textStyle="normal|bold" />
+            android:textSize="14sp"
+            android:layout_height="0dp" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
             android:id="@+id/list_item_merchant_category_name"
             android:layout_weight="1"
-            android:textSize="16sp"
-            android:textStyle="normal|bold" />
+            android:textSize="14sp"
+            android:layout_height="0dp" />
 
-        <TextView
-            android:text="TextView"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/list_item_merchant_address"
-            android:layout_weight="1"
-            android:textSize="16sp"
-            android:textStyle="normal|bold" />
+            android:layout_weight="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:id="@+id/list_item_merchant_address"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_height="match_parent"
+                android:id="@+id/list_item_merchant_rating"
+                android:layout_weight="0.37"
+                android:gravity="bottom|right"
+                tools:text="0"
+                android:layout_width="wrap_content" />
+
+            <ImageView
+                app:srcCompat="@drawable/star"
+                android:id="@+id/list_item_merchant_rating_image"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.15"
+                android:layout_width="10dp" />
+        </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:text="TextView"
-        android:layout_height="20dp"
-        android:id="@+id/list_item_merchant_rating"
-        android:layout_weight="1"
-        android:layout_gravity="bottom"
-        android:gravity="right"
-        tools:text="0"
-        android:layout_width="5dp" />
-
-    <ImageView
-        app:srcCompat="@drawable/star"
-        android:id="@+id/list_item_merchant_rating_image"
-        android:layout_height="20dp"
-        android:layout_width="20dp"
-        android:layout_gravity="bottom" />
 </LinearLayout>
