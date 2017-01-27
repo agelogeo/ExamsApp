@@ -57,7 +57,7 @@
         android:layout_gravity="bottom"
         android:gravity="right"
         tools:text="0"
-        android:layout_width="10dp" />
+        android:layout_width="5dp" />
 
     <ImageView
         app:srcCompat="@drawable/star"

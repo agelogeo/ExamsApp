@@ -46,7 +46,10 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
 
         viewHolder.imageView.setImageResource(R.drawable.yummy_logo);
         viewHolder.legalNameView.setText(m.getLegalName());
-        //.....
+        viewHolder.categoryNameView.setText(m.getCategory());
+        viewHolder.addressView.setText(m.getAddress());
+        viewHolder.ratingView.setText(m.getReview());
+
         return  rowView;
     }
 
