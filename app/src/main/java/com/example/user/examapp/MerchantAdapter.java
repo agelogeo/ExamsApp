@@ -60,7 +60,9 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
         public ViewHolder(View view){
             imageView = (ImageView)view.findViewById(R.id.list_item_merchant_image);
             legalNameView = (TextView)view.findViewById(R.id.list_item_merchant_legal_name);
-            //.....
+            categoryNameView = (TextView)view.findViewById(R.id.list_item_merchant_category_name);
+            addressView = (TextView)view.findViewById(R.id.list_item_merchant_address);
+            ratingView = (TextView)view.findViewById(R.id.list_item_merchant_rating);
         }
     }
 }
